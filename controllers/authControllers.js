@@ -12,10 +12,11 @@ import bcrypt from "bcryptjs"
 
 //registeruser
 export const registerUser = catchAsyncErrors(async (req, res, next) => {
-    const { name, classs } = req.body; // Extract classs from request body
+    const { name,email, classs } = req.body; // Extract classs from request body
   
     await User.create({
       name,
+      email,
       classs // Store classs in the database
     });
     res.status(200).json({

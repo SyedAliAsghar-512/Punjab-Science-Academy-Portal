@@ -68,7 +68,7 @@ const Header = () => {
         </div>
       </div>
       
-      <h5 className="name col-6 col-md-6 ps-6 text-center">PUNJAB SCIENCE ACADEMY</h5>
+      <h5 className="name col-6 col-md-6 ps-6 text-center">THE PUNJAB SCIENCE ACADEMY</h5>
 
       <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
         

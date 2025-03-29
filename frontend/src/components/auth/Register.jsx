@@ -16,6 +16,7 @@ const Register = () => {
 
   const [user, setUser] = useState({
     name: "",
+    emai: "",
     classs: "",
   });
 
@@ -33,7 +34,7 @@ const Register = () => {
     }
   }, [savedMode]);
 
-  const { name, classs } = user;
+  const { name,email, classs } = user;
 
   useEffect(() => {
     if (error) {
@@ -50,6 +51,7 @@ const Register = () => {
 
     const signUpData = {
       name,
+      email,
       classs
     };
 
@@ -79,6 +81,20 @@ const Register = () => {
                 className="form-control"
                 name="name"
                 value={name}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="name_field" className="form-label">
+                E-mail
+              </label>
+              <input
+                type="text"
+                id="name_field"
+                className="form-control"
+                name="email"
+                value={email}
                 onChange={onChange}
               />
             </div>
